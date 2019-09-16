@@ -1,12 +1,15 @@
-<h1> article list </h1>
+<h1> See what other People been writing about </h1>
+
+
+<hr>
+
+<% @articles.each do |article| %>
 
 <table>
 <tr> 
 <th> Title </th>
 <th> Description </th>
 </tr>
-
-<% @articles.each do |article| %>
 <tr>
     <td><%=  article.title %> </td>
     <td><%= article.description %> </td>
@@ -19,7 +22,8 @@
 
 
 </table>
+
     
 
 
-<p><%= link_to "Create a New Article", new_article_path %></p>
+<button class="btn btn-dark"><%= link_to "Create a New Article", new_article_path %></button>

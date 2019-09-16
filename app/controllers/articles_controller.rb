@@ -5,7 +5,6 @@ class ArticlesController < ApplicationController
 
     def index
         @articles = Article.all
-
     end
 
     def edit
@@ -33,7 +32,6 @@ class ArticlesController < ApplicationController
         else
             render :edit
         end
-
     end
 
     def destroy

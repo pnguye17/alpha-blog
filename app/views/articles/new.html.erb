@@ -1,13 +1,13 @@
-<h1> Create a new Article on your recent travel </h1>
 
-<% if @article.errors.any? %>
-<h2> The followings errors prevented the article being created </h2>
-<ul>
-<% @article.errors.full_messages.each do |msg| %>
-    <li><%= msg %> </li>
-<% end %>
-<ul>
-<% end %>
+# <% if @article.errors.any? %>
+
+# <h2> The followings errors prevented the article being created </h2>
+# <% @article.errors.full_messages.each do |msg| %>
+#     <div class="alert alert-warning" role="alert"> <%= msg %> </div>
+# <% end %>
+
+# <% end %>
+
 <%= form_for @article do |f| %>
     <p>
         <%= f.label :title %> <br/>
@@ -22,3 +22,5 @@
         <%= f.submit %>
     </p>
 <% end %>
+
+<%= link_to "Go Back to Article Listing Page", articles_path %>
