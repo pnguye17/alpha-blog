@@ -38,13 +38,13 @@ text-align: center;
 
 background-image: asset-url('africa-tilex.jpg');
 
-max-width: 100%;
-
-height: auto;
+background-size: cover;
 
 background-repeat: no-repeat;
 
-background-size: contain;
+background-position: center;
+
+height: 500px;
 
 }
 
