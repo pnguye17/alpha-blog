@@ -14,7 +14,7 @@ gem 'bootstrap-will_paginate', '0.0.10'
 
 # Use sqlite3 as the database for Active Record
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 gem 'jquery-rails'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.3.5'
